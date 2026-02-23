@@ -5,6 +5,8 @@
 # This script builds the Go binary for multiple platforms and architectures.
 # The binaries are placed in the dist/ directory for packaging.
 #
+# Requires Go 1.26+ (for ~30% reduced CGO overhead).
+#
 
 set -e  # Exit on error
 

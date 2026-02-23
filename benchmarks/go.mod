@@ -1,6 +1,6 @@
 module bench_server
 
-go 1.24.7
+go 1.26
 
 require (
 	github.com/Danny-Dasilva/CycleTLS/cycletls v1.0.30

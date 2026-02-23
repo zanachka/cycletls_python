@@ -1,8 +1,8 @@
 module github.com/Danny-Dasilva/CycleTLS/cycletls
 
-go 1.24
+go 1.26
 
-toolchain go1.24.4
+toolchain go1.26.0
 
 require (
 	github.com/Danny-Dasilva/fhttp v0.0.0-20240217042913-eeeb0b347ce1
@@ -11,6 +11,7 @@ require (
 	github.com/quic-go/quic-go v0.53.0
 	github.com/refraction-networking/uquic v0.0.6
 	github.com/refraction-networking/utls v1.8.0
+	github.com/vmihailenco/msgpack/v5 v5.4.1
 	golang.org/x/net v0.42.0
 	h12.io/socks v1.0.3
 )
@@ -24,7 +25,6 @@ require (
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/onsi/ginkgo/v2 v2.23.4 // indirect
 	github.com/quic-go/qpack v0.5.1 // indirect
-	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
 	go.uber.org/mock v0.5.2 // indirect

@@ -384,7 +384,10 @@ def main():
         print("-" * 50)
 
     if run_batch:
-        batch_result = run_batch_benchmark(url, reps)
+        # Batch fires all requests simultaneously; cap at 500 to avoid
+        # overwhelming localhost bench server.
+        batch_reps = min(reps, 500)
+        batch_result = run_batch_benchmark(url, batch_reps)
         if batch_result:
             batch_result['display_name'] = batch_result['library']
             batch_result['elapsed'] = reps * batch_result['us_per_req'] / 1_000_000
